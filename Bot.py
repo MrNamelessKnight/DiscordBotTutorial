@@ -12,7 +12,7 @@ client_token = Config.TOKEN
 @client.event
 async def on_ready():
     print(f"Logged in as {client.user} (ID: {client.user.id})")
-    await client.change_presence(status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.watching, name="the realm of PolarSwordium"))
+    await client.change_presence(status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.watching, name="INSERT STATUS"))
 
 class MyCog(commands.Cog):
     def __init__(self, bot):
