@@ -3,7 +3,6 @@ from discord.ext import commands
 from discord_slash import cog_ext, SlashContext, manage_commands,SlashCommand
 import Config
 
-
 intents = discord.Intents.all()
 client = commands.Bot(command_prefix='/', intents=intents)
 slash = SlashCommand(client, sync_commands=True)
@@ -12,7 +11,7 @@ client_token = Config.TOKEN
 @client.event
 async def on_ready():
     print(f"Logged in as {client.user} (ID: {client.user.id})")
-    await client.change_presence(status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.watching, name="INSERT STATUS"))
+    await client.change_presence(status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.watching, name=""))
 
 class MyCog(commands.Cog):
     def __init__(self, bot):
