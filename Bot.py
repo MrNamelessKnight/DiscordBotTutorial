@@ -1,5 +1,5 @@
 import discord
-from discord.ext import commands, tasks
+from discord.ext import commands
 from discord_slash import cog_ext, SlashContext, manage_commands,SlashCommand
 import Config
 
